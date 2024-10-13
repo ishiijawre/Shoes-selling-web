@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Selling Store - Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Thala <span>7.</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <p class="search-icon"><i class="fa fa-search" aria-hidden="true"></i> search</p>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                <img class="profile-pic" src="images/profile.jpg" alt="Profile">
+            </div>
+        </nav>
+    </header>
+    <section class="shopping-cart">
+        <div class="cart-left">
+            <h2>Shopping Cart</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>4,999</td>
+                        <td><button class="remove-btn">❌</button></td>
+                    </tr>
+                    <tr>
+                        <td>Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>4,999</td>
+                        <td><button class="remove-btn">❌</button></td>
+                    </tr>
+
+                    <!-- Additional rows as needed -->
+                </tbody>
+            </table>
+            <a href="#" class="continue-shopping">Continue Shopping</a>
+        </div>
+        <div class="cart-right">
+            <div class="coupon-card">
+                <label for="coupon"> Enter Coupon Code:</label>
+                <input type="text" id="coupon" placeholder="Enter coupon code">
+                <button class="apply-coupon-btn">Apply Coupon</button>
+            </div>
+            <div class="summary-card">
+                <p>Subtotal: &#8377;4,700</p>
+                <p>Taxes:&#8377; 199</p>
+                <p>Discount: &#8377;0</p>
+                <hr>
+                <p>Total:&#8377; 4,999</p>
+                <a href="payment.html"><button class="pay-now-btn">Pay Now</button></a>
+                <img src="images/razorpay-icon.png" alt="Razorpay" class="payment-icon">
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
+
+</html>
